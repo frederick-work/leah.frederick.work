@@ -31,7 +31,7 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '2.7.0'
+          ruby-version: '2.7.5'
           bundler-cache: true
           working-directory: 'build/'
       
@@ -41,7 +41,7 @@ jobs:
           MAKE="make --jobs 4" bundle exec jekyll build
           cd ..
       # cat development-blurb.md >> index.md
-      
+
       # bundle exec rake search:init
 
       - name: Checkout Dev Target
