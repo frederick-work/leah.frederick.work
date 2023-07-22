@@ -43,7 +43,7 @@ bundle exec jekyll serve --livereload
 ```
 The site should now be running at [localhost:4000](http://localhost:4000/).
 
-[Documentation](https://youssefraafatnasry.github.io/portfolYOU/docs/)
+Check out [this template's documentation](https://youssefraafatnasry.github.io/portfolYOU/docs/) if you want to customize the site beyond [adding a review](#adding-reviews).
 
 ## Dependencies
 
