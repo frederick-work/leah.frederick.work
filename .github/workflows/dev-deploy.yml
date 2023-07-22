@@ -1,0 +1,62 @@
+name: Development Build and Deploy
+on:
+  push:
+    branches: [ development ]
+    paths-ignore:
+      - '.github/workflows/**'
+      - 'README.md'
+  workflow_dispatch:
+
+env:
+  COMMIT_MSG: ${{ github.event.commits[0].message }}
+  URL: enigmaglass-docs.github.io/dev.leah.frederick.work
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    environment:
+      name: development
+      url: https://${{ env.URL }}
+    steps:
+      - name: Set GitHub Actions as Commit Author
+        run: |
+          git config --global user.name github-actions
+          git config --global user.email github-actions@github.com
+          
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+        with:
+          path: 'build'
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '2.7.0'
+          bundler-cache: true
+          working-directory: 'build/'
+      
+      - name: Build
+        run: |
+          cd build
+          cat development-blurb.md >> index.md
+          MAKE="make --jobs 4" bundle exec jekyll build
+          cd ..
+      
+      # bundle exec rake search:init
+
+      - name: Checkout Dev Target
+        uses: actions/checkout@v2
+        with:
+          repository: frederick-work/dev.leah.frederick.work
+          path: 'deploy'
+          token: ${{ secrets.PAT }}
+      
+      - name: Push files to target
+        run: |
+          rm -r deploy/*
+          rsync -avr --prune-empty-dirs --exclude '.git' build/* deploy
+          cd deploy
+          echo ${{ env.URL }} > CNAME
+          git add .
+          git commit -m "$COMMIT_MSG $GITHUB_SHA"
+          git push
