@@ -1,0 +1,29 @@
+name: Review Approved
+on:
+  label:
+    types: ['review approved']
+
+env:
+  COMMIT_MSG: ${{ github.event.commits[0].message }}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+
+    steps:
+      - name: Set GitHub Actions as Commit Author
+        run: |
+          git config --global user.name github-actions
+          git config --global user.email github-actions@github.com
+          
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+        with:
+          path: 'build'
+      
+      - name: Push files to target
+        run: |
+          echo "printing event trigger payload $GITHUB_EVENT_PATH"
+          cat $GITHUB_EVENT_PATH
