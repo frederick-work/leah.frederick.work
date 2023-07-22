@@ -1,5 +1,19 @@
 [![pages-build-deployment](https://github.com/frederick-work/leah.frederick.work/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/frederick-work/leah.frederick.work/actions/workflows/pages/pages-build-deployment)
 
+#### Table of Contents
+- [Overview](#overview)
+- [Adding reviews](#adding-reviews)
+- [Local Development](#local-development)
+- [Dependencies](#dependencies)
+
+
+# Overview
+This site was created using Youssef Raafat's [portfolYOU](https://github.com/YoussefRaafatNasry/portfolYOU/tree/master) Jekyll template. It's a simple, responsive, and portfolio-focused theme that's perfect for showcasing your work and skills.
+
+Jekyll is a static site generator that allows you to create a website without having to write HTML, CSS, or JavaScript. You can learn more about Jekyll [here](https://jekyllrb.com/). It's what powers [GitHub Pages](https://pages.github.com/), which is where this site is hosted.
+
+To modify the site you only need to be able to edit Markdown files. Markdown is a lightweight markup language that's easy to learn. You can learn more about Markdown [here](https://www.markdownguide.org/).
+
 # Adding reviews
 
 To add a review, copy the following text and paste it in a new file in the `_posts` directory. The name of the file should be in the format `YYYY-MM-DD-review-title.md`. For example, `2021-04-27-date-night-savior.md`. You can then customize the content to your liking.
@@ -20,6 +34,19 @@ blah blah bla...
 
 The information between the --- is called the front matter. It contains the information that will be displayed on the review card. The information below the --- is the review content. You can add as much content as you like.
 
+Once you've added the review, you'll need to commit and push the changes to GitHub. You can do this by running the following commands in a bash shell.
+```bash
+# add the new file to the staging area
+git add _posts/<your-post-name-here>.md
+
+# commit the changes
+git commit -m "added new review"
+
+# push the changes to GitHub
+git push
+```
+
+This will trigger [this Github action](https://github.com/frederick-work/leah.frederick.work/actions/workflows/pages/pages-build-deployment) that will update the live site at [leah.frederick.work](https://leah.frederick.work/).
 
 # Local Development
 
