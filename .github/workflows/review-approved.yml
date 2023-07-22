@@ -39,7 +39,7 @@ jobs:
           cd build
           echo "creating post"
           FILENAME=$(date +%Y-%m-%d)-review.md
-          echo $REVIEW_TEXT > _posts/$FILENAME
+          echo -en $REVIEW_TEXT > _posts/$FILENAME
           echo "push to repo"
           git add _posts/$FILENAME
           git commit -m "added review $REVIEW_TITLE"
