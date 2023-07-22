@@ -6,6 +6,9 @@ Deployment Status
 | [Production](https://leah.frederick.work) | [![pages-build-deployment](https://github.com/frederick-work/leah.frederick.work/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/frederick-work/leah.frederick.work/actions/workflows/pages/pages-build-deployment) |
 | [Development](https://dev.leah.frederick.work) | [![pages-build-deployment](https://github.com/frederick-work/dev.leah.frederick.work/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/frederick-work/dev.leah.frederick.work/actions/workflows/pages/pages-build-deployment) |
 
+Pending new reviews: [![GitHub issues](https://img.shields.io/github/issues/frederick-work/leah.frederick.work?label='new%20review')](https://github.com/frederick-work/leah.frederick.work/labels/new%20review)
+
+
 #### Table of Contents
 - [Overview](#overview)
 - [Managing automated review posting system](#managing-automated-review-posting-system)
@@ -23,7 +26,7 @@ Jekyll is a static site generator that allows you to create a website without ha
 To modify the site you only need to be able to edit Markdown files. Markdown is a lightweight markup language that's easy to learn. You can learn more about Markdown [here](https://www.markdownguide.org/).
 
 # Managing automated review posting system
-When a new review is submitted a new issue will be created [here](https://github.com/frederick-work/leah.frederick.work/labels/new%20review). If you want to approve the review, add the `review approved` label to the issue and close it. The site will automatically be updated with the new review.
+When a new review is submitted a new issue will be created [here](https://github.com/frederick-work/leah.frederick.work/labels/new%20review). If you want to approve the review, add the `review approved` label to the issue , remove the `new review` label, and close it. The site will automatically be updated with the new review.
 
 ## Links
 - [Google Apps Script](https://script.google.com/u/0/home/projects/1d4EQ3b3rAjj-Cck1z3Dcpx1PPvBXL31UNmqbPED-lQP6UilWwFsgbrPu/edit)
