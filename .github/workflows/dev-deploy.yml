@@ -55,6 +55,8 @@ jobs:
       - name: Push files to target
         run: |
           rm -r deploy/*
+          rm build/CNAME
+          cat "dev.leah.frederick.work" >> CNAME
           rsync -avr --prune-empty-dirs --exclude '.git' build/* deploy
           cd deploy
           echo ${{ env.URL }} > CNAME
