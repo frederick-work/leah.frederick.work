@@ -18,6 +18,7 @@ jobs:
     steps:
       - name: Check for 'review approved' issue label
         run: |
+          echo "triggering label --> $TRIGGERING_LABEL"
           if [ $TRIGGERING_LABEL != "review approved" ]; then
             echo "Label is not 'review approved', exiting..."
             exit 1
