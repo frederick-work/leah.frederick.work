@@ -8,6 +8,7 @@ Deployment Status
 
 #### Table of Contents
 - [Overview](#overview)
+- [Editing site with Github Codespaces](#editing-site-with-github-codespaces)
 - [Adding reviews](#adding-reviews)
 - [Local Development](#local-development)
 - [Dependencies](#dependencies)
