@@ -38,7 +38,7 @@ jobs:
         run: |
           cd build
           echo "creating post"
-          FILENAME=$(date +%Y-%m-%d)-$(uuidgen).md
+          FILENAME=$(date +%Y-%m-%d)-$(. .github/scripts/slugify.sh -exl $REVIEW_TITLE).md
           echo $"$REVIEW_TEXT" > _posts/$FILENAME
           echo "push to repo"
           git add _posts/$FILENAME
