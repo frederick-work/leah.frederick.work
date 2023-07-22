@@ -6,7 +6,7 @@ Deployment Status
 | [Production](https://leah.frederick.work) | [![pages-build-deployment](https://github.com/frederick-work/leah.frederick.work/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/frederick-work/leah.frederick.work/actions/workflows/pages/pages-build-deployment) |
 | [Development](https://dev.leah.frederick.work) | [![pages-build-deployment](https://github.com/frederick-work/dev.leah.frederick.work/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/frederick-work/dev.leah.frederick.work/actions/workflows/pages/pages-build-deployment) |
 
-Pending new reviews: [![GitHub issues](https://img.shields.io/github/issues/frederick-work/leah.frederick.work?label='new%20review')](https://github.com/frederick-work/leah.frederick.work/labels/new%20review)
+Pending new reviews: [![GitHub issues](https://img.shields.io/github/issues/frederick-work/leah.frederick.work?label=new%20review)](https://github.com/frederick-work/leah.frederick.work/labels/new%20review)
 
 
 #### Table of Contents
