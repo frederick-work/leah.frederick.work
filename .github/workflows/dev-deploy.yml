@@ -3,13 +3,13 @@ on:
   push:
     branches: [ development ]
     paths-ignore:
-      - '.github/workflows/**'
+      # - '.github/workflows/**'
       - 'README.md'
   workflow_dispatch:
 
 env:
   COMMIT_MSG: ${{ github.event.commits[0].message }}
-  URL: enigmaglass-docs.github.io/dev.leah.frederick.work
+  URL: dev.leah.frederick.work
 
 jobs:
   build:
@@ -28,18 +28,19 @@ jobs:
         with:
           path: 'build'
 
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '2.7.5'
-          bundler-cache: true
-          working-directory: 'build/'
+      # - name: Setup Ruby
+      #   uses: ruby/setup-ruby@v1
+      #   with:
+      #     ruby-version: '2.7.5'
+      #     bundler-cache: true
+      #     working-directory: 'build/'
       
-      - name: Build
-        run: |
-          cd build
-          MAKE="make --jobs 4" bundle exec jekyll build
-          cd ..
+      # - name: Build
+      #   run: |
+      #     cd build
+      #     rm vendor/bundle/ruby/2.7.0/gems/jekyll-3.9.3/lib/site_template/_posts/0000-00-00-welcome-to-jekyll.markdown.erb
+      #     MAKE="make --jobs 4" bundle exec jekyll build
+      #     cd ..
       # cat development-blurb.md >> index.md
 
       # bundle exec rake search:init
@@ -54,6 +55,8 @@ jobs:
       - name: Push files to target
         run: |
           rm -r deploy/*
+          rm build/CNAME
+          echo "dev.leah.frederick.work" >> CNAME
           rsync -avr --prune-empty-dirs --exclude '.git' build/* deploy
           cd deploy
           echo ${{ env.URL }} > CNAME
