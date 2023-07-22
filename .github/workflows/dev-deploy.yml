@@ -38,9 +38,9 @@ jobs:
       - name: Build
         run: |
           cd build
-          cat development-blurb.md >> index.md
           MAKE="make --jobs 4" bundle exec jekyll build
           cd ..
+      # cat development-blurb.md >> index.md
       
       # bundle exec rake search:init
 
