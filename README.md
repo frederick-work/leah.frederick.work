@@ -1,3 +1,5 @@
+**AYO: Don't get mad, you don't have to write code to modify this. This is a free static site so you might have to put a little bit of work into figuring it out; that's why it's free. You can do it! I believe in you!**
+
 [![pages-build-deployment](https://github.com/frederick-work/leah.frederick.work/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/frederick-work/leah.frederick.work/actions/workflows/pages/pages-build-deployment)
 
 #### Table of Contents
@@ -8,7 +10,7 @@
 
 
 # Overview
-This site was created using Youssef Raafat's [portfolYOU](https://github.com/YoussefRaafatNasry/portfolYOU/tree/master) Jekyll template. It's a simple, responsive, and portfolio-focused theme that's perfect for showcasing your work and skills.
+[This site](https://leah.frederick.work) was created using Youssef Raafat's [portfolYOU](https://github.com/YoussefRaafatNasry/portfolYOU/tree/master) Jekyll template. It's a simple, responsive, and portfolio-focused theme that's perfect for showcasing your work and skills.
 
 Jekyll is a static site generator that allows you to create a website without having to write HTML, CSS, or JavaScript. You can learn more about Jekyll [here](https://jekyllrb.com/). It's what powers [GitHub Pages](https://pages.github.com/), which is where this site is hosted.
 
