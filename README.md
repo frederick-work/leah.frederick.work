@@ -1,8 +1,6 @@
 [![pages-build-deployment](https://github.com/frederick-work/leah.frederick.work/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/frederick-work/leah.frederick.work/actions/workflows/pages/pages-build-deployment)
 
-[leah.frederick.work](https://leah.frederick.work) 
-
-## Adding reviews
+# Adding reviews
 
 To add a review, copy the following text and paste it in a new file in the `_posts` directory. The name of the file should be in the format `YYYY-MM-DD-review-title.md`. For example, `2021-04-27-date-night-savior.md`. You can then customize the content to your liking.
 
@@ -23,7 +21,7 @@ blah blah bla...
 The information between the --- is called the front matter. It contains the information that will be displayed on the review card. The information below the --- is the review content. You can add as much content as you like.
 
 
-## Local Development
+# Local Development
 
 To run the site locally, run the following commands in a bash shell. You'll need to install [the dependencies](#dependencies) first.
 ```bash
@@ -45,7 +43,7 @@ The site should now be running at [localhost:4000](http://localhost:4000/).
 
 Check out [this template's documentation](https://youssefraafatnasry.github.io/portfolYOU/docs/) if you want to customize the site beyond [adding a review](#adding-reviews).
 
-## Dependencies
+# Dependencies
 
 To run this site locally, you'll need to install the following dependencies:
 - [Git](https://git-scm.com/downloads) - Source control for the code that makes up the site
