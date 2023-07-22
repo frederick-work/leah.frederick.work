@@ -1,7 +1,7 @@
 ---
 title: Leah is great with kids!
 tags: [House Sitting, Babysitting]
-style: fill
+style: border
 color: secondary
 comments: true
 description: Leah watched our house and babysat our kids so that I could join my wife on her business trip

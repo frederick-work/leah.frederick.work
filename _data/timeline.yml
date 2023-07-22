@@ -1,17 +1,9 @@
-- title: Student, Harvard CS
-  from: 2014
-  to: 2018
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-               reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+- title: Nanny, Lancaster Area
+  from: 2022
+  to: Present
+  description:
 
-- title: Software Engineer, Google, UK
-  from: 2018
-  to: present
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-               reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+- title: Wilderness Retreat Counseler, Spruce Lake Retreat Center
+  from: May
+  to: August 2022
+  description: During the summer of 2022, I had an unforgettable experience as a wilderness retreat counselor at a camp, where I had the privilege of guiding and inspiring young campers through various outdoor activities and team-building exercises. My time as a counselor not only honed my leadership skills but also strengthened my ability to foster a positive and enriching environment, leaving a lasting impact on both campers and myself.
