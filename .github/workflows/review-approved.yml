@@ -5,6 +5,9 @@ on:
 
 env:
   COMMIT_MSG: ${{ github.event.commits[0].message }}
+  TRIGGERING_LABEL: ${{ github.event.label.name }}
+  REVIEW_TEXT: ${{ github.event.issue.body }}
+  REVIEW_TITLE: ${{ github.event.issue.title }}
 
 jobs:
   build:
@@ -13,6 +16,13 @@ jobs:
       name: github-pages
 
     steps:
+      - name: Check for 'review approved' issue label
+        run: |
+          if [ $TRIGGERING_LABEL != "review approved" ]; then
+            echo "Label is not 'review approved', exiting..."
+            exit 1
+          fi
+
       - name: Set GitHub Actions as Commit Author
         run: |
           git config --global user.name github-actions
@@ -23,7 +33,12 @@ jobs:
         with:
           path: 'build'
       
-      - name: Push files to target
+      - name: Update site with new review
         run: |
-          echo "printing event trigger payload $GITHUB_EVENT_PATH"
-          cat $GITHUB_EVENT_PATH
+          echo "creating post"
+          FILENAME=$(date +%Y-%m-%d)-review.md
+          cat $REVIEW_TEXT > build/_posts/$FILENAME
+          echo "push to repo"
+          git add build/_posts/$FILENAME
+          git commit -m "added review $REVIEW_TITLE"
+          git push -f
