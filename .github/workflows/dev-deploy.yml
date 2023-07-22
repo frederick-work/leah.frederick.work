@@ -38,6 +38,7 @@ jobs:
       - name: Build
         run: |
           cd build
+          rm vendor/bundle/ruby/2.7.0/gems/jekyll-3.9.3/lib/site_template/_posts/0000-00-00-welcome-to-jekyll.markdown.erb
           MAKE="make --jobs 4" bundle exec jekyll build
           cd ..
       # cat development-blurb.md >> index.md
