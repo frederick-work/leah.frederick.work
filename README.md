@@ -82,4 +82,4 @@ To run this site locally, you'll need to install the following dependencies:
 
 You'll probably also want to install a text editor or IDE. I recommend [Visual Studio Code](https://code.visualstudio.com/).
 
-You can use the bash shell that's included with the [Git for Windows](https://gitforwindows.org/) installation to run [the commands above to run the site locally](#local-development).
+You can use the bash shell that's included with the [Git for Windows](https://gitforwindows.org/) installation to run [the commands above to run the site locally](#local-development). In order to push code to Github to update the live site, you'll need to [add an SSH key to your Github account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
