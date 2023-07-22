@@ -1,7 +1,7 @@
 name: Review Approved
 on:
-  label:
-    types: ['review approved']
+  issues:
+    types: ['labeled']
 
 env:
   COMMIT_MSG: ${{ github.event.commits[0].message }}
