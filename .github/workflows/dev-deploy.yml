@@ -9,7 +9,7 @@ on:
 
 env:
   COMMIT_MSG: ${{ github.event.commits[0].message }}
-  URL: enigmaglass-docs.github.io/dev.leah.frederick.work
+  URL: dev.leah.frederick.work
 
 jobs:
   build:
