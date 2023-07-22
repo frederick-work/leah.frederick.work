@@ -8,6 +8,7 @@ Deployment Status
 
 #### Table of Contents
 - [Overview](#overview)
+- [Managing automated review posting system](#managing-automated-review-posting-system)
 - [Editing site with Github Codespaces](#editing-site-with-github-codespaces)
 - [Adding reviews](#adding-reviews)
 - [Local Development](#local-development)
@@ -22,6 +23,9 @@ Jekyll is a static site generator that allows you to create a website without ha
 To modify the site you only need to be able to edit Markdown files. Markdown is a lightweight markup language that's easy to learn. You can learn more about Markdown [here](https://www.markdownguide.org/).
 
 # Managing automated review posting system
+When a new review is submitted a new issue will be created [here](https://github.com/frederick-work/leah.frederick.work/issues). If you want to approve the review, add the `review approved` label to the issue and close it. The site will automatically be updated with the new review.
+
+## Links
 - [Google Apps Script](https://script.google.com/u/0/home/projects/1d4EQ3b3rAjj-Cck1z3Dcpx1PPvBXL31UNmqbPED-lQP6UilWwFsgbrPu/edit)
 - [Google Sheets Review Database](https://docs.google.com/spreadsheets/d/1bS30eDES4LTxzarj2mK8ARuiLirTPhnQS_0Q1X7Vx1c/edit?resourcekey#gid=2048581759)
 - [Google Forms Review Submission](https://docs.google.com/forms/d/1Ml41FKG77zkvw9xZtzm_5_Iw7TH4JYvEDQjfFxu4ER4/edit)
